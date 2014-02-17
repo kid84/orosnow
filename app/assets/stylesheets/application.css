@@ -11,3 +11,244 @@
  *= require_self
  *= require_tree .
  */
+
+
+/*
+box-sizing:border-box;
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+-webkit-tap-highlight-color: rgba(255,105,183,0.6);
+max-width:100%;
+word-break:break-all;
+webkit-appearance:none;
+*/
+
+// reset
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+* {
+  -webkit-appearance: none;
+}
+body {
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  background: #72d6db;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+ 
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+ 
+/* remember to highlight inserts somehow! */
+ins {
+  text-decoration: none;
+}
+del {
+  text-decoration: line-through;
+}
+ 
+/* tables still need 'cellspacing=&quot;0&quot;' in the markup */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.index .wrapper {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  overflow: hidden;
+  max-width: 100%;
+  min-height: 100%;
+}
+
+.index {
+  background: url(topindex.png) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.index.level-a {
+  background: url(level-a-bg.png) no-repeat top center #72d6db;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.index.level-b {
+  background: url(level-b-bg.png) no-repeat top center #72d6db;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.index.level-c {
+  background: url(level-c-bg.png) no-repeat top center #72d6db;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.index.level-d {
+  background: url(level-d-bg.png) no-repeat top center #72d6db;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.index.level-e {
+  background: url(level-e-bg.png) no-repeat top center #72d6db;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.btn-og {
+  display: inline-block;
+  padding: 3% 10%;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border: 2px solid #fff;
+  background: #e7a12c;
+  color: #000;
+  text-decoration: none;
+}
+
+button.btn-og {
+  display: inline-block;
+  padding: 1% 10%;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border: 2px solid #fff;
+  background: #e7a12c;
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.index .wrapper > p,
+.radio-group + p {
+  width: 100%;
+  text-align: center;
+}
+
+.radio-group + p {
+  margin-top: 10%;
+}
+
+.index .wrapper .btn-og {
+  margin: 30% auto;
+}
+
+.index.level-a .wrapper .btn-og,
+.index.level-b .wrapper .btn-og,
+.index.level-c .wrapper .btn-og,
+.index.level-d .wrapper .btn-og,
+.index.level-e .wrapper .btn-og {
+  margin: 15% auto;
+}
+
+h1 { padding: 5%; text-align: center; font-size: 26px; font-weight: normal; }
+form { padding: 0% 5% 5%; }
+label { display: block; padding-bottom: 2%; }
+select, input[type="text"], input[type="email"] {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border: 2px solid #32a0a0;
+  display: block;
+  width: 100%;
+  margin-bottom: 5%;
+  font-size: 16px;
+  height: 30px;
+  text-indent: 1em;
+  cursor: pointer;
+  background: #fff;
+}
+
+img { max-width: 100%; }
+.level-img { margin-bottom: 2%; }
+div.radio-group {
+  margin-bottom: 100px;
+}
+div.radio-group input[type="radio"] {
+  /*
+  opacity: 0;
+    filter: alpha(opacity=0);
+  */
+}
+div.radio-group div {
+  position: relative;
+}
+div.radio-group input[type="radio"] {
+  position: absolute;
+  left: 0px;
+  outline:none;
+}
+div.radio-group label {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  background: #fff;
+  width: 23.5%;
+  padding: 2% 4%;
+  margin-right: 2%;
+  margin-bottom: 5%;
+  border: 2px solid #32a0a0;
+  text-align: center;
+  border-radius: 6px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  float: left;
+}
+
+div.radio-group div:first-child label {
+}
+div.radio-group div:last-child label {
+  margin: 0;
+}
+div.radio-group label.checked {
+  background: #32a0a0;
+}
+
