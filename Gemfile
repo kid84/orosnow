@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
+gem 'rake', '10.1.1'
 
 # Use mysql as the database for Active Record
 gem 'mysql2'
@@ -29,7 +30,7 @@ gem 'jbuilder', '~> 1.2'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
-  gem 'sdoc', require: false
+  gem 'sdoc' #, require: false
 end
 
 # Use ActiveModel has_secure_password
@@ -44,7 +45,7 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-gem 'rails_12factor', group: :production
+gem 'rails_12factor' , group: :production
 gem 'slim-rails'
 # gem 'bootstrap-sass'
 gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
