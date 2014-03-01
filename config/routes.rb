@@ -9,6 +9,7 @@ Orosnow::Application.routes.draw do
   get "timing/edit"
   get "user/index"
   get "user/setting"
+  post "user/registration" => "user#registration", :as => :registration
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
