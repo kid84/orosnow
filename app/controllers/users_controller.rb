@@ -10,10 +10,11 @@ class UsersController < ApplicationController
     @user.adress = params[:adress]
     @user.meil = prams[:mail]
     @user.password = prams[:password]
-    @user.salt = #password暗号化の処理
+    @user.salt = 1 #password暗号化の処理
     @user.timing_id = params[:timing_id]
-    @user.lat = #緯度
-    @user.lan = #経度
+    @user.total_depth = 20 #現在の積雪量を取得（フォームから)
+    @user.latitude = @user.conver_address_to_lat
+    @user.longitude = @user.convert_address_to_lng
 
     if @user.save
       #登録後の処理

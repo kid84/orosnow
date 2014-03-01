@@ -48,8 +48,7 @@ end
 gem 'rails_12factor' , group: :production
 gem 'slim-rails'
 # gem 'bootstrap-sass'
-gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
-                              :github => 'anjlab/bootstrap-rails'
+gem 'anjlab-bootstrap-rails',  :require => 'bootstrap-rails',  :github => 'anjlab/bootstrap-rails'
 # gem 'bootstrap3-rails'
 # gem 'compass-rails'
-
+gem 'geocoder'
