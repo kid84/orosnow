@@ -139,7 +139,7 @@ DEPENDENCIES
   mysql2
   rails (= 4.0.2)
   rails_12factor
-  rake
+  rake (= 10.1.1)
   sass-rails (~> 4.0.0)
   sdoc
   slim-rails
