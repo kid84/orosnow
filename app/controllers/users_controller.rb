@@ -8,16 +8,16 @@ class UsersController < ApplicationController
 
   def registration
     @user = User.new
-    @user.adress = params[:adress]
-    @user.meil = prams[:mail]
+    @user.address = params[:address]
+    @user.mail = params[:mail]
     @user.password = 00000000 #prams[:password]
     @user.salt = 00000000 #password暗号化の処理
     @user.timing_id = 30 #params[:timing_id]
-    @user.total_depth = 20 #現在の積雪量を取得（フォームから)
-    @user.latitude = @user.conver_address_to_lat
-    @user.longitude = @user.convert_address_to_lng
+    @user.total_depth = 30 #params[:total_depth]
+    @user.latitude = 35.65 #@user.convert_address_to_lat
+    @user.longitude = 139.736 #@user.convert_address_to_lng
 
-    if @user.save
+    if @user.save!
       render :text => "success"
     else
       render :text => "failed"

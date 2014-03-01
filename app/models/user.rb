@@ -7,8 +7,8 @@ class User < ActiveRecord::Base
 #  geocoded_by :address
 #  after_validation :geocode
 
-  validates :mail, presence: {message: "メールアドレスを入力してください。"}
-  validates :address, presence: {message: "住所を入力してください。"}
+#  validates :mail, presence: {message: "メールアドレスを入力してください。"}
+#  validates :address, presence: {message: "住所を入力してください。"}
 
 
   def convert_address_to_lat
