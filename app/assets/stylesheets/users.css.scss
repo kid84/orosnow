@@ -40,7 +40,6 @@ body {
   padding: 0;
   background: #72d6db;
   height: 100%;
-  background: #000!important;
 }
 
 ol, ul {
@@ -87,7 +86,7 @@ table {
 }
 
 .index {
-  background: url(../images/topindex.png) no-repeat center center;
+  background: url(/assets/topindex.png) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
