@@ -42,6 +42,9 @@ body {
   height: 100%;
 }
 
+.last {
+  margin-right: 0 !important;
+}
 ol, ul {
   list-style: none;
 }
@@ -86,7 +89,7 @@ table {
 }
 
 .index {
-  background: url(/assets/topindex.png) no-repeat center center;
+  background: url(/assets/topindex.png) no-repeat top center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
