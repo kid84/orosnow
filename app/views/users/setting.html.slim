@@ -1,60 +1,32 @@
 .wrapper
   h1 初期設定
   =form_for @user, url: registration_path do |f|
+
     label お住まい
-    =f.text_field :address, placeholder:"例：東京都港区芝公園４−２−８", size:"30"
+    =f.text_field :address, id:"set_addresss", class:"set_addresss", placeholder:"例：東京都港区芝公園４−２−８", size:"30"
 
     label メールアドレス
-    =f.email_field :mail, placeholder:"例：hogehoge@huga.com", size:"30"
+    =f.email_field :mail, id:"set_mail", class:"set_mail", placeholder:"例：hogehoge@huga.com", size:"30"
+
+    /! label パスワード
+    /! =f.password_field :password, id:"set_password", class:"set_password", size:"30"
 
     label 今の屋根の積もり具合は何cmぐらい？
-    =f.text_field :total_depth, placeholder:"例：30"
+    =f.text_field :total_depth, id:"set_total_depth", class:"set_total_depth", style:"width:100px;float:left;", placeholder:"例：30"
+    | cm
 
-    label ”オロス”タイミング
+    label style="clear:both;" ”オロス”タイミング
     .level-img
       img src="/assets/level.png"
-
     .radio-group.clearfix
-        f.radio_button :timing_id
-        label for="30cm" 30cm
-
-        f.radio_button :timing_id
-        label for="50cm" 50cm
-
-        f.radio_button :timing_id
-        label for="70cm" 70cm
-
-        f.radio_button :timing_id
-        label for="90cm" 90cm
+      f.radio_button :timing_id
+      label for="30cm" 30cm
+      f.radio_button :timing_id
+      label for="50cm" 50cm
+      f.radio_button :timing_id
+      label for="70cm" 70cm
+      f.radio_button :timing_id
+      label for="90cm" 90cm
 
     =f.submit "つぎへ", class:"btn-og"
-
-    label お住まい
-    input#set_addresss.set_address placeholder="住所" size="30" type="text"
-
-    label メールアドレス
-    input#set_mail.set_mail name="opinion[email]" placeholder="メールアドレス" size="30" type="email"
-
-    label 今の屋根の積もり具合は？
-    input#set_total_depth.set_total_depth placeholder="30" size="10" type="text" cm
-
-    label ”オロス”タイミング
-    .level-img
-      img src="/assets/level.png"
-    .radio-group.clearfix
-      div
-        input#30cm.radio type="radio" name="radio" value="30cm"
-        label for="30cm" 30cm
-      div
-        input#50cm.radio type="radio" name="radio" value="50cm"
-        label for="50cm" 50cm
-      div
-        input#70cm.radio type="radio" name="radio" value="70cm"
-        label for="70cm" 70cm
-      div
-        input#90cm.radio type="radio" name="radio" value="90cm"
-        label for="90cm" 90cm
-
-    p
-      button.btn-og type="submit" つぎへ
 
