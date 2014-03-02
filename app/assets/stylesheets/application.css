@@ -90,14 +90,14 @@ table {
 }
 
 .index {
-  background: url(topindex.png) no-repeat center center;
+  background: url(/assets/topindex.png) no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 .index.level-a {
-  background: url(level-a-bg.png) no-repeat top center #72d6db;
+  background: url(/assets/level-a-bg.png) no-repeat top center #72d6db;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -105,7 +105,7 @@ table {
 }
 
 .index.level-b {
-  background: url(level-b-bg.png) no-repeat top center #72d6db;
+  background: url(/assets/level-b-bg.png) no-repeat top center #72d6db;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -113,7 +113,7 @@ table {
 }
 
 .index.level-c {
-  background: url(level-c-bg.png) no-repeat top center #72d6db;
+  background: url(/assets/level-c-bg.png) no-repeat top center #72d6db;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -121,7 +121,7 @@ table {
 }
 
 .index.level-d {
-  background: url(level-d-bg.png) no-repeat top center #72d6db;
+  background: url(/assets/level-d-bg.png) no-repeat top center #72d6db;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -129,7 +129,7 @@ table {
 }
 
 .index.level-e {
-  background: url(level-e-bg.png) no-repeat top center #72d6db;
+  background: url(/assets/level-e-bg.png) no-repeat top center #72d6db;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
