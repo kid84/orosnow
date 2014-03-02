@@ -39,6 +39,8 @@ body {
   margin: 0;
   padding: 0;
   background: #72d6db;
+  height: 100%;
+  background: #000!important;
 }
 
 ol, ul {
@@ -129,6 +131,7 @@ table {
   background: #e7a12c;
   color: #000;
   text-decoration: none;
+  z-index: 100;
 }
 
 button.btn-og {
@@ -266,4 +269,5 @@ div.setting {
   box-shadow: 0px 0px 5px 1px rgba(255, 255, 255, 0.8);
   -moz-box-shadow: 0px 0px 5px 1px rgba(255, 255, 255, 0.8);
   -webkit-box-shadow: 0px 0px 5px 1px rgba(255, 255, 255, 0.8);
+  z-index: 10;
 }
